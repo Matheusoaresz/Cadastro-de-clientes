@@ -16,63 +16,57 @@
 </head>
 
 <body>
-    <div>
+    <div class="grupo">
+        <form action="">
+        <fieldset >
         <h1 id="titulo">Cadastro de Clientes</h1>
-        <p id="subtitulo">Preencha com suas informações</p>
-        <br>
-    </div>
-    <form>
-        <fieldset class="grupo">
-            <div class="campo"> <label for="nome"><strong>Nome</strong></label>
-            <input type="text" name="nome" id="nome" required>
+         <h2 id="subtitulo">Preencha com suas informações</h2>
+        <br><br>
+            <div class="campo"> 
+                <input type="text" name="nome" id="nome" class= "user" required>
+                <label for="nome" class="labelInput"><strong>Nome</strong></label>
             </div>
-
+            <br><br>
             <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
+                <input type="text" name="sobrenome" id="sobrenome" class= "user" required>
+                <label for="sobrenome" class="labelInput"><strong>Sobrenome</strong></label>
             </div>
-        </fieldset>
-
-           <fieldset>
+               <br><br>
                <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
-                   <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email" class= "user" required>
+                    <label for="email" class="labelInput"><strong>Email</strong></label>
                 </div>
+                <br><br>
                 <div class="campo">
-                    <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="number" name="numero" id="numero">
+                    <input type="text" name="numero" id="numero" class= "user" required>
+                    <label for="telefone" class="labelInput"><strong>Telefone</strong></label>
                 </div>
-           </fieldset>
-
+                <br><br>
                  <div class="campo">
-                    <label for="endereco"><strong>Endereço</strong></label>
-                   <input type="text" name="endereco" id="endereco" required>
+                    <input type="text" name="endereco" id="endereco" class= "user" required>
+                    <label for="endereco" class="labelInput"><strong>Endereço</strong></label>
                </div>
-             <fieldset>
+               <br><br>
                  <div class="campo">
-                     <label for="cpf"><strong>CPF</strong></label>
-                     <input type="text" name="cpf" id="cpf"
-                     pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn">
+                    <input type="text" name="cpf" id="cpf" class= "user" required>
+                     <label for="cpf" class="labelInput"><strong>CPF</strong></label>
                  </div>
+                 <br><br>
                  <div class="campo">
-                    <label for="rg"><strong>RG</strong></label>
-                    <input type="text" name="rg" id="rg">
+                    <input type="text" name="rg" id="rg" class= "user" required>
+                    <label for="rg" class="labelInput"><strong>RG</strong></label>
                  </div>
-                 <div class="campo">
-                    <label for="dataNascimento"><strong>Data de nascimento</strong></label>
-                    <input type="date" name="dataNascimento" id="dataNascimento">
-                 </div>
-             </fieldset>
+                 <br>
+                    <label for="data_nascimento"><strong>Data de nascimento</strong></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento"  required>
+                 <br><br>
 
-        <div class="campo">
-            <br>
-            <label for="observacoes"><strong>Observações:</strong></label>
-            <textarea rows="6" style="width:26em" id="observacoes" name="observacoes"></textarea>
-        </div>
+                <input type="submit" name="submit" id="submit">
+         </fieldset>
 
-        <button class="botao" type="submit" onsubmit="">Finalizar</button>
-    </form>
+         </form>
 
+    </div>
 </body>
 
 </html>

@@ -1,127 +1,77 @@
-/* 
-#1D7A55
-#427A64
-#30C78A
-#3BFBAF
-#87FBCD
-*/
 
-* {
-    margin: 0;
-    padding:0;
-}
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
 
-#titulo {
-    font-family: 'Fredoka', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    text-align: left;
-    margin-left: 0%;
-    color: #124933;
-}
-
-#subtitulo {
-    font-family: 'Fredoka', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    text-align: left;
-    font-size: 28px;
-    margin-left: 0%;
-    color: #124933;
-}
-
-#fieldset {
-    border: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
 body{
-    font-family: 'Fredoka', sans-serif;
-    text-align: left;
-    font-size: 1em;
-    margin: 10%;
-    margin-top: 2%;
-    justify-content: center;
-    background-color: #1d7a5546;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left,#4ce4b1, #96E0D3 );
 }
 
-input{
-    float: right;
+
+
+.grupo{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+   transition: translate(-50%, -50%);
+   background-color: rgba(0, 0, 0, 0.7);
+   padding: 15px;
+   border-radius: 8px;
+   width: 25%;
+}
+
+h2{
+    color: #339e7b;
+}
+
+.campo{
+    position: relative;
+}
+
+.user{
+    background: none;
     border: none;
-    padding: 13px;
-    width: 210px;
-}
-div {
-    border: 1px solid #CCC;
-    height: 105px;
-    width: 414px;
-}
-
-button  {
-    font-family: 'Fredoka', sans-serif;
-    color: #f2f8f6a9;
-    background-color: #23815c;
-    border-radius: 2px;
-    font-size: 1em;
-    
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    width: 95%;
+    letter-spacing: 1px;
 }
 
-.grupo:before, .grupo:after {
-    display: table;
+.labelInput{
+    position: absolute;
+    top: 0px; /* aqui  */
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.user:focus ~ .labelInput,
+.user:valid ~ .labelInput{
+    top: -28px;
+    font-size: 25px;
+    color: #339e7b;
 }
 
-.grupo:after {
-    clear: both;
+#data_nascimento{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
 }
 
-.campo {
-        margin-bottom: 1em;
+#submit{
+    background-image: linear-gradient(to left,#22795c, #4f7971 );
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.campo label{
-    margin-bottom: 0.2em;
-    color: #103b2a;
-    display: block;
+#submit:hover{
+    background-image: linear-gradient(to left,#1d684f, #3e5f5a );
 }
-
-fieldset.grupo.campo{
-    float: left;
-    margin-right: 1em;
-    border: 0;
-}
-
-.campo input[type="text"].campo input[type="email"].campo textarea{
-    padding: 0.3em;
-    border: 5px solid #12cf77;
-    box-shadow: 2px 2px 2px #12cf87;
-    display: block;
-}
-
-.campo input:focus, .campo textarea:focus{
-    background-color: #2cf5a523;
-}
-
-
-.botao {
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #23815c;
-    border: 0;
-    margin-bottom: 1em; 
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    top: 95%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.botao:hover{
-    background-color: #175c407e;
-    box-shadow: inset 2px 2px 2px #0c3524;
-    text-shadow: none;
-}
-
-.botao, select{
-    cursor: pointer; }
